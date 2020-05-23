@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Дипломная работа: Дмитрий Алексеев</title>
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css" />
+  <link rel="stylesheet" href="css/main.css" />
+  <script src="js/jquery-3.5.0.min.js"></script>
+  <script src="js/jquery.maskedinput.min.js"></script>
+  <script src="https://kit.fontawesome.com/20a529a9f1.js" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+</head>
+
+<body>
+  <header class="header">
+    <div class="header__top-wrapper">
+      <nav class="header__navigation navigation">
+        <ul>
+          <li>
+            <a href="#services">Услуги</a>
+          </li>
+          <li>
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li>
+            <a href="#service-cost">Стоимоcть</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="header__btn-nav btn-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <a class="header__tel tel" href="tel:+74999955577">+7 (499) 995-55-77</a>
+      <a class="header__btn-order-call-mb btn-order-call-mb" href="#" aria-label="Request a call"></a>
+      <a class="header__btn-order-call-tab btn-order-call-tab" href="#">заказать звонок</a>
+    </div>
+    <div class="header__bootom-wrapper">
+      <div class="header__conteiner">
+        <picture>
+          <source srcset="img/man-mb.png" media="(max-width: 1023px)" />
+          <img src="img/man.png" alt="logo" />
+        </picture>
+        <section class="header__info">
+          <h1>Дмитрий Алексеев</h1>
+          <h2>Frontend-разработчик и веб-верстальщик</h2>
+          <a id="info-btn" href="#">Узнать больше</a>
+        </section>
+      </div>
+    </div>
+    <svg class="header__flying-tags" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+      <defs>
+        <linearGradient id="Gradient01">
+          <stop offset="20%" stop-color="#ff2f96"></stop>
+          <stop offset="90%" stop-color="#ff8f5a"></stop>
+        </linearGradient>
+      </defs>
+      <text class="flying-tags tags-div" x="10" y="15">&#60;div&#62;</text>
+      <text class="flying-tags tags-div-add" x="10" y="15">&#60;div&#62;</text>
+      <text class="flying-tags tags-slash" x="50" y="15">&#60;&#47;&#62;</text>
+      <text class="flying-tags tags-slash-add" x="50" y="15">&#60;&#47;&#62;</text>
+      <text class="flying-tags tags-lattice" x="80" y="15">&#35;</text>
+      <text class="flying-tags tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;</text>
+    </svg>
+  </header>
+
+
+  <main class="main">
+
+    <section class="main__services services" id="services">
+      <h3>Что я делаю</h3>
+      <ul>
+        <li>Вёрстка лендинг–страниц и&nbsp;сайтов любой сложности</li>
+        <li>Адаптивная вёрстка под все браузеры и устройства</li>
+        <li>Frontend – разработка и&nbsp;программирование</li>
+        <li>Исправление и доработка существующей вёрстки</li>
+      </ul>
+      <a id="services-btn" href="#">Узнать стоимость</a>
+    </section>
+
+    <section class="main__portfolio portfolio" id="portfolio">
+      <h3>Примеры моих работ</h3>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <figure class="swiper-slide card">
+            <a href="#">
+              <img src="img/Layer1.jpg" alt="Сайт психолога Веры Антоновой" />
+            </a>
+            <figcaption>
+              <a href="#">Сайт психолога Веры Антоновой</a>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide card">
+            <a href="#">
+              <img src="img/Layer2.jpg" alt="Сайт магазина детской одежды" />
+            </a>
+            <figcaption>
+              <a href="#">Сайт магазина детской одежды</a>
+            </figcaption>
+          </figure>
+          <figure class="swiper-slide card">
+            <a href="#"><img src="img/Layer3.jpg" alt="Сайт магазина «Рыболов»" /></a>
+            <figcaption>
+              <a href="#">Сайт магазина «Рыболов»</a>
+            </figcaption>
+          </figure>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <div class="swiper-button-wrap">
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <a class="portfolio__btn-order-project" href="#">Узнать стоимость</a>
+    </section>
+
+
+    <section class="main__service-cost service-cost" id="service-cost">
+      <div class="service-cost__wrapper">
+        <h3>Адаптивная вёрстка под все устройства и&nbsp;браузеры от 1000 рублей всего за&nbsp;4&nbsp;часа.*
+          <small>Срок и стоимость могут&nbsp;отличаться от&nbsp;заявленных и рассчитываются индивидуально, в зависимости от&nbsp;сложности задач.</small>
+        </h3>
+      </div>
+      <svg class="service-cost__flying-tags" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+        <text class="service-cost__flying-tags service-cost__tags-div" x="10" y="15">&#60;div&#62;</text>
+        <text class="service-cost__flying-tags service-cost__tags-slash" x="50" y="15">&#60;&#47;&#62;</text>
+        <text class="service-cost__flying-tags service-cost__tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;</text>
+        <text class="service-cost__flying-tags service-cost__tags-parentheses-new" x="100" y="15">&#123;&nbsp;&#125;</text>
+        <text class="service-cost__flying-tags service-cost__tags-lattice" x="80" y="15">&#35; </text>
+      </svg>
+    </section>
+
+
+    <section class="main__popap, popap" id="popap">
+      <h3 class="visually-hidden">форма отправки </h3>
+      <form name="form" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
+        <label>Ваше имя:
+          <input id="name" type="text" name="name" placeholder="Ваше имя" required="required" />
+        </label>
+        <label>Ваш E-mail:
+          <input id="email" type="email" name="email" placeholder="Ваш E-mail" required="required" />
+        </label>
+        <label>Ваш номер телефона:
+          <input id="tel" type="tel" placeholder="+7 (___) ___-__-__" name="tel" required="required" />
+        </label>
+        <input class="popap__btn" type="submit" value="Отправить" />
+        <div class="close"></div>
+      </form>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <nav class="footer__bootom-navigation bootom-navigation">
+        <ul>
+          <li>
+            <a href="#services">Услуги </a>
+          </li>
+          <li>
+            <a href="#portfolio">Портфолио</a>
+          </li>
+          <li>
+            <a href="#service-cost">Стоимоcть</a>
+          </li>
+        </ul>
+      </nav>
+      <address class="footer__contacts contacts">
+        <a href="tel:+74999957755">
+          <i class="fas fa-phone-alt"></i>
+          +7 (499) 995-77-55
+        </a>
+        <a href="mailto:dmitry@alekseev.com">
+          <i class="fas fa-envelope"></i>
+          dmitry@alekseev.com</a>
+      </address>
+      <div class="footer__conteiner">
+        <a class="footer__btn-feelback" href="#">Заказать звонок</a>
+        <address class="footer__social social">
+          <ul class="social__item">
+            <li>
+              <a href="#" aria-label="open to vk"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="open to facebook"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="open to twitter"></a>
+            </li>
+            <li>
+              <a href="#" aria-label="open to instagram"></a>
+            </li>
+          </ul>
+        </address>
+      </div>
+    </div>
+    <div class="footer__copyright">
+      <small>&copy;Дмитрий Алексеев, 2016 &mdash; 2018</small>
+    </div>
+  </footer>
+
+  <script src="js/script.js" defer="defer"></script>
+</body>
+
+</html>
