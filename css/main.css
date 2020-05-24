@@ -1231,17 +1231,17 @@ input[type="radio"].visually-hidden {
   background-color: #ff4e2e;
   border: none;
 }
-.services a:hover {
+.services button:hover {
   color: #ff4e2e;
   background-color: #fff;
   border: 1px solid #ff4e2e;
 }
-.services a:active {
+.services button:active {
   color: #fff;
   background-color: #ff4d2ea4;
   border: none;
 }
-.services a:focus {
+.services button:focus {
   color: #ff4e2e;
   background-color: #fff;
   border: 1px solid #ff4e2e;
