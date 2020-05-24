@@ -799,6 +799,10 @@ i {
   -webkit-text-fill-color: transparent;
 }
 
+button {
+  cursor: pointer;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="checkbox"].visually-hidden,
 input[type="radio"].visually-hidden {
