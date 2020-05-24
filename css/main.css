@@ -1164,6 +1164,7 @@ input[type="radio"].visually-hidden {
     height: 60px;
   }
 }
+
 .services {
   width: 320px;
   min-width: 320px;
@@ -1214,7 +1215,7 @@ input[type="radio"].visually-hidden {
 .services li:nth-child(4)::before {
   background-position: -9px -9px;
 }
-.services a {
+.services button {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1224,6 +1225,7 @@ input[type="radio"].visually-hidden {
   font-size: 16px;
   color: #fff;
   background-color: #ff4e2e;
+  border: none;
 }
 .services a:hover {
   color: #ff4e2e;
@@ -1241,7 +1243,8 @@ input[type="radio"].visually-hidden {
   border: 1px solid #ff4e2e;
 }
 
-@media (min-width: 1024px) {
+
+@media (min-width: 768px) {
   .services {
     min-width: 650px;
     margin-bottom: 106px;
@@ -1361,6 +1364,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background-color: #ff4e2e;
   margin-top: 36px;
+  border: none;
 }
 .portfolio__btn-order-project:hover {
   color: #ff4e2e;
@@ -1431,6 +1435,14 @@ input[type="radio"].visually-hidden {
   right: 0;
 }
 
+@media (min-width: 768px) {
+  .portfolio img {
+    width: 455px;
+    height: 357px;
+    margin: 0 0 13px 38px;
+  }
+}
+
 @media (min-width: 1024px) {
   .portfolio {
     padding-top: 38px;
@@ -1455,11 +1467,6 @@ input[type="radio"].visually-hidden {
     margin-left: 30px;
     line-height: 36px;
     font-size: 25px;
-  }
-  .portfolio img {
-    width: 455px;
-    height: 357px;
-    margin: 0 0 13px 38px;
   }
   .portfolio__navigation {
     width: 110px;
@@ -1583,6 +1590,7 @@ input[type="radio"].visually-hidden {
   color: #fff;
   background-color: #ff4e2e;
   margin: 0;
+  border: none;
 }
 .footer__btn-feelback:hover {
   color: #ff4e2e;
@@ -1608,9 +1616,9 @@ input[type="radio"].visually-hidden {
   background-color: #31293c;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 768px) {
   .footer__wrapper {
-    width: 1024px;
+    min-width: 760px;
     flex-direction: row;
     justify-content: space-between;
     padding: 58px 39px 31px;
@@ -1628,6 +1636,7 @@ input[type="radio"].visually-hidden {
     margin-top: 6px;
     color: #f53f4f;
     background-color: #fff;
+  
   }
   .footer__btn-feelback:hover {
     background: linear-gradient(200deg, #ff2f96, #ff8f5a);
@@ -1637,6 +1646,12 @@ input[type="radio"].visually-hidden {
   .footer__copyright {
     padding: 26px;
     font-size: 20px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .footer__wrapper {
+    width: 1024px;
   }
 }
 @media (min-width: 1400px) {
