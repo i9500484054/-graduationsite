@@ -58,12 +58,24 @@
           <stop offset="90%" stop-color="#ff8f5a"></stop>
         </linearGradient>
       </defs>
-      <text class="flying-tags tags-div" x="10" y="15">&#60;div&#62;</text>
-      <text class="flying-tags tags-div-add" x="10" y="15">&#60;div&#62;</text>
-      <text class="flying-tags tags-slash" x="50" y="15">&#60;&#47;&#62;</text>
-      <text class="flying-tags tags-slash-add" x="50" y="15">&#60;&#47;&#62;</text>
-      <text class="flying-tags tags-lattice" x="80" y="15">&#35;</text>
-      <text class="flying-tags tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;</text>
+      <text class="flying-tags tags-div" x="10" y="15">&#60;div&#62;
+        <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
+      <text class="flying-tags tags-div-add" x="10" y="15">&#60;div&#62;
+         <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
+      <text class="flying-tags tags-slash" x="50" y="15">&#60;&#47;&#62;
+         <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
+      <text class="flying-tags tags-slash-add" x="50" y="15">&#60;&#47;&#62;
+         <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
+      <text class="flying-tags tags-lattice" x="80" y="15">&#35;
+         <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
+      <text class="flying-tags tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;
+         <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+      </text>
     </svg>
   </header>
 
@@ -125,16 +137,26 @@
         </h3>
       </div>
       <svg class="service-cost__flying-tags" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
-        <text class="service-cost__flying-tags service-cost__tags-div" x="10" y="15">&#60;div&#62;</text>
-        <text class="service-cost__flying-tags service-cost__tags-slash" x="50" y="15">&#60;&#47;&#62;</text>
-        <text class="service-cost__flying-tags service-cost__tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;</text>
-        <text class="service-cost__flying-tags service-cost__tags-parentheses-new" x="100" y="15">&#123;&nbsp;&#125;</text>
-        <text class="service-cost__flying-tags service-cost__tags-lattice" x="80" y="15">&#35; </text>
+        <text class="service-cost__flying-tags service-cost__tags-div" x="10" y="15">&#60;div&#62;
+          <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+        </text>
+        <text class="service-cost__flying-tags service-cost__tags-slash" x="50" y="15">&#60;&#47;&#62;
+          <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+        </text>
+        <text class="service-cost__flying-tags service-cost__tags-parentheses" x="100" y="15">&#123;&nbsp;&#125;
+          <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+        </text>
+        <text class="service-cost__flying-tags service-cost__tags-parentheses-new" x="100" y="15">&#123;&nbsp;&#125;
+          <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+        </text>
+        <text class="service-cost__flying-tags service-cost__tags-lattice" x="80" y="15">&#35; 
+          <animate  attributeName="x" from="350" to="0" dur="1.1s" repeatCount="1"/>
+        </text>
       </svg>
     </section>
 
 
-    <section class="main__popap, popap" id="popap">
+    <section class="main__popap popap" id="popap">
       <h3 class="visually-hidden">форма отправки </h3>
       <form name="form" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
         <label>Ваше имя:
@@ -142,6 +164,26 @@
         </label>
         <label>Ваш номер телефона:
           <input id="tel" type="tel" placeholder="+7 (___) ___-__-__" name="tel" required="required" />
+        </label>
+        <input class="popap__btn" type="submit" value="Отправить" />
+        <div class="close"></div>
+      </form>
+    </section>
+
+    <section class="main__popap-two popap-two" id="popap-two">
+      <h3 class="visually-hidden">форма отправки </h3>
+      <form name="form" action="https://echo.htmlacademy.ru/" method="POST" enctype="multipart/form-data">
+        <label>Ваше имя:
+          <input id="name" type="text" name="name" placeholder="Ваше имя" required="required" />
+        </label>
+        <label>Ваш номер телефона:
+          <input id="tel" type="tel" placeholder="+7 (___) ___-__-__" name="tel" required="required" />
+        </label>
+        <label>Ваша почта:
+          <input id="email" type="email" placeholder="Ваша почта" name="email" required="required" />
+        </label>
+        <label>Ваши коментарии:
+          <textarea name="comments" id="comments" placeholder="Ваши коментарии" cols="30" rows="10"></textarea>
         </label>
         <input class="popap__btn" type="submit" value="Отправить" />
         <div class="close"></div>
