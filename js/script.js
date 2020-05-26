@@ -7,9 +7,16 @@ $(document).ready(function(){
     });
 
     //Отслеживаем все нажатия на кнопки для вызова popap
-    $('body').on('click','.btn-order-call-tab, #info-btn, #services-btn, .portfolio__btn-order-project, .footer__btn-feelback', function(){
+    $('body').on('click','.header__btn-order-call-mb, .btn-order-call-tab, .footer__btn-feelback', function(){
         //Показывем popap
         $('#popap').css('display','block');
+        // Убираем скролл 
+        $('body').css('overflow','hidden');
+    });
+    //Отслеживаем все нажатия на кнопки для вызова popap
+    $('body').on('click','#info-btn, #services-btn, .portfolio__btn-order-project', function(){
+        //Показывем popap
+        $('#popap-two').css('display','block');
         // Убираем скролл 
         $('body').css('overflow','hidden');
     });
@@ -18,6 +25,13 @@ $(document).ready(function(){
     $('body').on('click','.close', function(){
         // скрываем popap
         $('#popap').css('display','none');
+        // возвращем скрол в прежнее состояние 
+        $('body').css('overflow','auto');
+    });
+    //Отслеживаем нажатия кнопки popap закрытьpap
+    $('body').on('click','.close', function(){
+        // скрываем popap
+        $('#popap-two').css('display','none');
         // возвращем скрол в прежнее состояние 
         $('body').css('overflow','auto');
     });
